@@ -43,13 +43,13 @@ const popularresources = [
         icon: '/images/links/api.svg',
     },
     {
-        href: 'products/nft-api/index.html',
-        title: 'NFT API',
-        desc: 'Read data from Uniqs and Uniq Factories using our NFT API.',
+        href: 'products/nft-api/introduction.html',
+        title: 'Ultra API',
+        desc: 'Read data from Uniqs and Uniq Factories using our Ultra API.',
         icon: '/images/links/api.svg',
     },
     {
-        href: 'products/index',
+        href: 'products/index.html',
         title: 'Products',
         desc: 'Ultras ecosystem is full of useful tools that every developer should know about.',
         icon: '/images/links/tools.svg',
@@ -97,17 +97,17 @@ const gamelinks = [
 
 const creatorlinks = [
     {
-        href: 'tutorials/uniq-factories/building-uniq-factories/firsttokenfactory.html',
-        title: 'Create a Token Factory',
+        href: 'tutorials/uniq-factories/creating-uniq-factories/how-to-create-uniq-metadata.html',
+        title: 'Create Uniq Factory Metadata',
         icon: '/images/links/uniq.svg',
     },
     {
-        href: 'tutorials/uniq-factories/building-uniq-factories/creatingmetadata.html',
-        title: 'Create Metadata',
+        href: 'tutorials/uniq-factories/creating-uniq-factories/how-to-create-uniq-factory-using-toolkit.html',
+        title: 'Create a Uniq Factory',
         icon: '/images/links/uniq.svg',
     },
     {
-        href: 'tutorials/uniq-factories/building-uniq-factories/mintingyourfirstuniq.html',
+        href: 'tutorials/uniq-factories/creating-uniq-factories/how-to-create-uniq-factory-using-toolkit.html',
         title: 'Minting your first Uniq',
         icon: '/images/links/uniq.svg',
     },
@@ -130,7 +130,7 @@ const marketplacelinks = [
         icon: '/images/links/uniq.svg',
     },
     {
-        href: 'products/nft-api/index.html',
+        href: 'products/nft-api/introduction.html',
         title: 'Using Our NFTAPI',
         icon: '/images/links/uniq.svg',
     },

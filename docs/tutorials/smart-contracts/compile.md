@@ -1,38 +1,47 @@
 ---
-title: '3. Smart Contract Compiling'
+title: 'Tutorial - Compile Smart Contracts using the Ultra Smart Contract VS Code Extension'
 
-outline: [0,5]
+outline: [0, 5]
 order: -97
 ---
 
-# Smart Contract Compiling
+# Tutorial - Compile Smart Contracts using the Ultra Smart Contract VS Code Extension
 
-Compiling smart contracts is very simple with the [Ultra.io Smart Contract Toolkit](https://marketplace.visualstudio.com/items?itemName=ultraio.ultra-cpp).
+Compiling smart contracts is very simple with the [Ultra Smart Contract VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ultraio.ultra-cpp).
 
-If docker is installed correctly it will automatically download our development image, and use the image to compile your contracts.
+## Prerequisites
 
-Make sure you're not connected to any vm or docker container with remote explorer otherwise the plugin won't work correctly.
+-   Have installed the Ultra Smart Contract VS Code Extension. Refer to [Install and Setup the Ultra Smart Contract VS Code Extension Tutorial](./index.md) for more information.
+
+::: info
+The tutorial is up-to-date with version 1.4.2 of the VS Code extension
+:::
+
+## Goal
+
+The goal of this tutorial is to compile smart contracts using the Ultra Smart Contract VS Code Extension.
+
 ## How to Compile
 
 There are **two ways** to compile your smart contract.
 
-1. Make sure you have the `.cpp` file open and selected and click `Compile` at the bottom of VSCode.
+First way is to compile using the VS Code Status Bar. Make sure you have the `.cpp` file open and selected and click `Compile` at the bottom of VS Code.
 
 ![](./images/compile-button.png)
 
-1. Use the `Command Palette (F1)` under `Ultra: Build Contract`
+Second way to compile is to use the `Command Palette (F1)` and search for `Ultra: Build Contract`.
 
 ![](./images/command-palette-build.png)
 
 ## Successful Compilation
 
-If successful you won't see any `errors` in the output window for `ultra-cpp`.
+If the compilation is successful, you won't see any `errors` in the output window for `ultra-cpp`.
 
 ![](./images/successful-build.png)
 
 ## Bad Compilation
 
-If unsuccessful you will see various errors such as the ones below.
+If the compilation is successful unsuccessful, you will see various errors such as the ones below.
 
 ![](./images/unsuccessful-build.png)
 
@@ -41,3 +50,9 @@ If unsuccessful you will see various errors such as the ones below.
 Once the files are compiled you should see an `abi` and a `wasm` file next to your compiled smart contract.
 
 ![](./images/compiled-files.png)
+
+For more information about `.abi` and `.wasm` files see the [official EOS Network Foundation page](https://docs.eosnetwork.com/docs/latest/quick-start/build-and-deploy#what-does-a-smart-contract-build-to)
+
+## What's next?
+
+The next tutorial will cover deploying smart contracts using the VS Code extension. See [Tutorial - Deploy Smart Contracts using the Ultra Smart Contract VS Code Extension](./deploy.md) for more information.

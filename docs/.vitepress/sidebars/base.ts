@@ -11,18 +11,38 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             items: [
                 {
                     text: 'Overview',
-                    link: '/tutorials/index/index',
+                    link: '/tutorials/index/',
                 },
             ],
         },
         {
-            text: 'Basics',
-            items: getMarkdownFiles('/tutorials/general/basics'),
+            text: 'Fundamentals',
+            items: getMarkdownFiles('/tutorials/fundamentals'),
             collapsed: true,
         },
         {
-            text: 'Fundamentals',
-            items: getMarkdownFiles('/tutorials/fundamentals'),
+            text: 'Guides - Basics',
+            items: getMarkdownFiles('/tutorials/guides'),
+            collapsed: true,
+        },
+        {
+            text: 'Guides - Advanced',
+            items: getMarkdownFiles('/tutorials/advanced-guides'),
+            collapsed: true,
+        },
+        {
+            text: 'Projects',
+            items: [
+                {
+                    text: 'Vite, Vue, and Ultra Wallet',
+                    items: getMarkdownFiles('/tutorials/projects/vite-vue-ultra-wallet'),
+                },
+            ],
+            collapsed: true,
+        },
+        {
+            text: 'Basics',
+            items: getMarkdownFiles('/tutorials/general/basics'),
             collapsed: true,
         },
         {
@@ -41,8 +61,8 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             collapsed: true,
         },
         {
-            text: 'Build a Uniq Factory',
-            items: getMarkdownFiles('/tutorials/uniq-factories/building-uniq-factories'),
+            text: 'Create a Uniq Factory',
+            items: getMarkdownFiles('/tutorials/uniq-factories/creating-uniq-factories'),
             collapsed: true,
         },
         {
@@ -61,8 +81,43 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             collapsed: true,
         },
         {
-            text: 'Smart Contracts',
+            text: 'Uniq Offer',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-offer'),
+            collapsed: true,
+        },
+        {
+            text: 'Uniq Auction',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-auction'),
+            collapsed: true,
+        },
+        {
+            text: 'Uniq On-chain Data',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-on-chain-data'),
+            collapsed: true,
+        },
+        {
+            text: 'Token Swap',
             items: getMarkdownFiles('/tutorials/token-swap'),
+            collapsed: true,
+        },
+        {
+            text: 'Fungitable Token',
+            items: getMarkdownFiles('/tutorials/token'),
+            collapsed: true,
+        },
+        {
+            text: 'Oracle',
+            items: getMarkdownFiles('/tutorials/oracle'),
+            collapsed: true,
+        },
+        {
+            text: 'Substreams',
+            items: getMarkdownFiles('/tutorials/substreams'),
+            collapsed: true,
+        },
+        {
+            text: 'Airgrab',
+            items: getMarkdownFiles('/tutorials/airgrab'),
             collapsed: true,
         },
     ],
@@ -100,6 +155,38 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
         {
             text: 'Fundamentals',
             items: getMarkdownFiles('/tutorials/fundamentals'),
+            collapsed: true,
+        },
+    ],
+    '/tutorials/guides': [
+        {
+            text: 'Guides',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Guides - Basics',
+            items: getMarkdownFiles('/tutorials/guides'),
+            collapsed: true,
+        },
+    ],
+    '/tutorials/advanced-guides': [
+        {
+            text: 'Guides',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Guides - Advanced',
+            items: getMarkdownFiles('/tutorials/advanced-guides'),
             collapsed: true,
         },
     ],
@@ -164,13 +251,13 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             items: [
                 {
                     text: 'Overview',
-                    link: '/tutorials/uniq-factories/index',
+                    link: '/tutorials/uniq-factories/',
                 },
             ],
         },
         {
-            text: 'Build a Uniq Factory',
-            items: getMarkdownFiles('/tutorials/uniq-factories/building-uniq-factories'),
+            text: 'Create a Uniq Factory',
+            items: getMarkdownFiles('/tutorials/uniq-factories/creating-uniq-factories'),
             collapsed: false,
         },
         {
@@ -188,6 +275,21 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             items: getMarkdownFiles('/tutorials/uniq-factories/uniq-avatar'),
             collapsed: true,
         },
+        {
+            text: 'Uniq Offer',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-offer'),
+            collapsed: true,
+        },
+        {
+            text: 'Uniq Auction',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-auction'),
+            collapsed: true,
+        },
+        {
+            text: 'Uniq On-chain Data',
+            items: getMarkdownFiles('/tutorials/uniq-factories/uniq-on-chain-data'),
+            collapsed: true,
+        },
     ],
     '/tutorials/token-swap': [
         {
@@ -200,8 +302,69 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             ],
         },
         {
-            text: 'Smart Contracts',
+            text: 'Token Swap',
             items: getMarkdownFiles('/tutorials/token-swap'),
+        },
+    ],
+    '/tutorials/token': [
+        {
+            text: 'Tutorials',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Fungitable Token',
+            items: getMarkdownFiles('/tutorials/token'),
+            collapsed: false,
+        },
+    ],
+    '/tutorials/oracle': [
+        {
+            text: 'Tutorials',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Oracle',
+            items: getMarkdownFiles('/tutorials/oracle'),
+        },
+    ],
+    '/tutorials/substreams': [
+        {
+            text: 'Tutorials',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Substreams',
+            items: getMarkdownFiles('/tutorials/substreams'),
+        },
+    ],
+    '/tutorials/airgrab': [
+        {
+            text: 'Tutorials',
+            items: [
+                {
+                    text: '< Go Back to Tutorials',
+                    link: '/tutorials/index/index',
+                },
+            ],
+        },
+        {
+            text: 'Aigrab',
+            items: getMarkdownFiles('/tutorials/airgrab'),
         },
     ],
     // ################
@@ -262,7 +425,7 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             collapsed: true,
         },
         {
-            text: 'NFT API',
+            text: 'Ultra API',
             items: getMarkdownFiles('/products/nft-api'),
             collapsed: true,
         },
@@ -272,13 +435,8 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
             collapsed: true,
         },
         {
-            text: 'Smart Contract Toolkit',
+            text: 'Smart Contract VS Code Extension',
             items: getMarkdownFiles('/products/smart-contract-toolkit'),
-            collapsed: true,
-        },
-        {
-            text: 'Fungible Tokens',
-            items: getMarkdownFiles('/products/fungible-tokens'),
             collapsed: true,
         },
         {
@@ -289,6 +447,11 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
         {
             text: 'Uniq Discord Bot',
             items: getMarkdownFiles('/products/uniq-discord-bot'),
+            collapsed: true,
+        },
+        {
+            text: 'Uniq Metadata Tool',
+            items: getMarkdownFiles('/products/uniq-metadata-tool'),
             collapsed: true,
         },
     ],
@@ -424,6 +587,48 @@ const sidebar: { [key: string]: DefaultTheme.SidebarItem[] } = {
                 },
             ],
             collapsed: true,
+        },
+        {
+            text: 'Oracle Contract',
+            items: [
+                ...getMarkdownFiles('/blockchain/contracts/oracle-contract'),
+                {
+                    text: 'Actions',
+                    items: getMarkdownFiles('/blockchain/contracts/oracle-contract/oracle-actions'),
+                    collapsed: true,
+                },
+            ],
+            collapsed: true,
+        },
+        {
+            text: 'Avatar Contract',
+            items: [
+                ...getMarkdownFiles('/blockchain/contracts/avatar-contract'),
+                {
+                    text: 'Actions',
+                    items: getMarkdownFiles('/blockchain/contracts/avatar-contract/avatar-actions'),
+                    collapsed: true,
+                },
+            ],
+            collapsed: true,
+        },
+        {
+            text: 'Airgrab Contract',
+            items: [
+                ...getMarkdownFiles('/blockchain/contracts/airgrab-contract'),
+                {
+                    text: 'Actions',
+                    items: getMarkdownFiles('/blockchain/contracts/airgrab-contract/airgrab-actions'),
+                    collapsed: true,
+                },
+            ],
+            collapsed: true,
+        },
+    ],
+    '/feedback/index': [
+        {
+            text: 'Feedback',
+            items: getMarkdownFiles('/feedback'),
         },
     ],
 };

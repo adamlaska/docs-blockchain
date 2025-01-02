@@ -9,11 +9,14 @@ const navbar: DefaultTheme.NavItem[] = [
             {
                 text: 'Featured',
                 items: [
-                    { text: 'Fundamentals', link: '/tutorials/fundamentals/how-to-generate-a-keypair' },
-                    { text: 'Docker', link: '/tutorials/docker/index' },
+                    { text: 'Fundamentals', link: '/tutorials/fundamentals/tutorial-generate-key-and-create-testnet-account' },
+                    { text: 'Guides', link: '/tutorials/guides/how-to-create-ultra-pro-wallet.md' },
+                    { text: 'Docker', link: '/tutorials/docker/getting-started' },
                     { text: 'Smart Contracts', link: '/tutorials/smart-contracts/index' },
                     { text: 'Uniq Factories', link: '/tutorials/uniq-factories/index' },
                     { text: 'Token Swap', link: '/tutorials/token-swap/index' },
+                    { text: 'Fungitable Token', link: '/tutorials/token/index' },
+                    { text: 'Airgrab', link: '/tutorials/airgrab/index' },
                 ],
             },
         ],
@@ -44,7 +47,7 @@ const navbar: DefaultTheme.NavItem[] = [
                 items: [
                     { text: 'Ultra Wallet', link: '/products/ultra-wallet/index' },
                     { text: 'Chain API', link: '/products/chain-api/index' },
-                    { text: 'NFT API', link: '/products/nft-api/index' },
+                    { text: 'Ultra API', link: '/products/nft-api/introduction' },
                 ],
             },
         ],
@@ -57,6 +60,10 @@ const navbar: DefaultTheme.NavItem[] = [
             { text: 'Block Producers', link: '/blockchain/block-producers/index' },
             { text: 'Contracts', link: '/blockchain/contracts/index' },
         ],
+    },
+    {
+        text: 'Feedback',
+        link: '/feedback/index',
     },
 ];
 
